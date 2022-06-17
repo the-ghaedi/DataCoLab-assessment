@@ -15,7 +15,7 @@ function Search() {
                 <SearchBox fullWidth autoFocus q={q} onChange={handleChange} />
             </nav>
             <div className="flex flex-1">
-                <div className="m-auto">
+                <div className="m-auto dark:text-white">
                     {q}
                 </div>
             </div>

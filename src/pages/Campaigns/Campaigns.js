@@ -22,7 +22,7 @@ function Campaigns() {
 
     return (
         <div className="flex flex-col h-full">
-            <nav className="flex gap-1">
+            <nav className="flex gap-1 flex-wrap">
                 <Button active={selectedButton === "googleDrive"} onClick={() => setSelectedButton("googleDrive")} color="secondary">
                     <GoogleDriveIcon />
                     {clouds.googleDrive}
@@ -38,7 +38,7 @@ function Campaigns() {
                 <SearchBox onKeyDown={goToSearch} />
             </nav>
             <div className="flex flex-1">
-                <div className="m-auto">
+                <div className="m-auto dark:text-white">
                     {clouds[selectedButton]}
                 </div>
             </div>

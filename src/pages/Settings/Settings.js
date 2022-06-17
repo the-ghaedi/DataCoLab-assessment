@@ -15,7 +15,7 @@ function Settings() {
                 <SearchBox onKeyDown={goToSearch} />
             </nav>
             <div className="flex flex-1">
-                <div className="m-auto">
+                <div className="m-auto dark:text-white">
                     Settings
                 </div>
             </div>
